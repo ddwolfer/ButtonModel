@@ -6,10 +6,12 @@
 
 
 var buttonStruct = ds_map_create()
+
 ds_map_add(buttonStruct,"text",argument0)
 ds_map_add(buttonStruct,"x1",argument1)
 ds_map_add(buttonStruct,"y1",argument2)
 ds_map_add(buttonStruct,"x2",argument3)
 ds_map_add(buttonStruct,"y2",argument4)
+ds_map_add(buttonStruct,"cursor",0)
 
 return buttonStruct

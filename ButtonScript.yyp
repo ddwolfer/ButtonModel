@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3ee65ff6-9a8f-43b1-b525-638d2c11f0c6",
+            "Value": {
+                "id": "e6fc783b-698d-4ea4-b5cd-078f7c617680",
+                "resourcePath": "scripts\\button_group_click\\button_group_click.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "45816d5f-35e1-4730-9845-c5c7eb910c48",
             "Value": {
                 "id": "b7d2b731-bac9-4193-b62b-70955901b2c9",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "82bacbb7-7d26-4548-aeca-b959f92450e5",
+            "Value": {
+                "id": "a6db1dce-1a2a-4f91-bd96-6853259368aa",
+                "resourcePath": "scripts\\button_group_init\\button_group_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a5c805e8-fbb1-4dcf-a458-fdeacb381196",
             "Value": {
                 "id": "a3e17d9a-8b6f-4e4e-ba4d-d3de2b089e3e",
@@ -148,6 +164,14 @@
                 "id": "bec3a5f8-cc87-477d-a269-5fa0d5eebbc4",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "c5a375d8-8e43-4e22-bf71-a43f0764f5fb",
+            "Value": {
+                "id": "2ed72375-24d6-4b4f-8858-282f1d236734",
+                "resourcePath": "scripts\\draw_button_group\\draw_button_group.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -234,7 +258,10 @@
     "script_order": [
         "d90170e0-4834-420f-8a1f-0309c0790e15",
         "45816d5f-35e1-4730-9845-c5c7eb910c48",
-        "d029b136-846a-461e-aff6-ba8cd0bc2309"
+        "d029b136-846a-461e-aff6-ba8cd0bc2309",
+        "82bacbb7-7d26-4548-aeca-b959f92450e5",
+        "c5a375d8-8e43-4e22-bf71-a43f0764f5fb",
+        "3ee65ff6-9a8f-43b1-b525-638d2c11f0c6"
     ],
     "tutorial": ""
 }
