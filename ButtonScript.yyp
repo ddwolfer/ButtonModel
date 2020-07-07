@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "45816d5f-35e1-4730-9845-c5c7eb910c48",
+            "Value": {
+                "id": "b7d2b731-bac9-4193-b62b-70955901b2c9",
+                "resourcePath": "scripts\\draw_button_gui\\draw_button_gui.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49e9e3ad-397f-4c9b-b646-1e920c7a7a53",
             "Value": {
                 "id": "00bace55-0f1f-411b-afd6-84f0b550fbcc",
@@ -143,6 +151,22 @@
             }
         },
         {
+            "Key": "c6c3b3f9-d36e-48fb-abb5-17bdc7304552",
+            "Value": {
+                "id": "25df9265-445a-45f9-bc37-03046a35da27",
+                "resourcePath": "objects\\object0\\object0.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c7ce7e2f-ef80-40c3-b288-c26427ed2b51",
+            "Value": {
+                "id": "ca86cef0-0ae9-4dc9-9708-dca4d8583e33",
+                "resourcePath": "objects\\NUM\\NUM.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c9e34661-38c5-4dfd-9d64-b038c7b1fbe4",
             "Value": {
                 "id": "0e52cede-ecbc-45f4-be17-79c4a8ab3932",
@@ -164,6 +188,22 @@
                 "id": "7b19aeab-457c-4efb-b195-0f39d7206865",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d029b136-846a-461e-aff6-ba8cd0bc2309",
+            "Value": {
+                "id": "d2bbbf43-8571-4e2d-b400-5da18c040675",
+                "resourcePath": "scripts\\button_click\\button_click.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d90170e0-4834-420f-8a1f-0309c0790e15",
+            "Value": {
+                "id": "e76a2f67-48c2-49ed-8130-27c6e1609103",
+                "resourcePath": "scripts\\button_box_init\\button_box_init.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -192,7 +232,9 @@
         }
     ],
     "script_order": [
-        
+        "d90170e0-4834-420f-8a1f-0309c0790e15",
+        "45816d5f-35e1-4730-9845-c5c7eb910c48",
+        "d029b136-846a-461e-aff6-ba8cd0bc2309"
     ],
     "tutorial": ""
 }
