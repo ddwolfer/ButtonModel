@@ -11,24 +11,24 @@ var MY = mouse_y
 //keyboard
 if( group[?"direction"] == 0 ){
 	if(keyboard_check_pressed(vk_left)){
-		if(group["cursor"]>0){
-			group["cursor"]-=1
+		if(group[?"cursor"]>0){
+			group[?"cursor"]-=1
 		} 
 	}
 	if(keyboard_check_pressed(vk_right)){
-		if(group["cursor"] < array_length_1d(ButtonGroup) -1  ){
-			group["cursor"]+=1
+		if(group[?"cursor"] < array_length_1d(ButtonGroup) -1  ){
+			group[?"cursor"]+=1
 		} 
 	}
-}else{
+}else if(group[?"direction"] == 1){
 	if(keyboard_check_pressed(vk_up)){
-		if(group["cursor"]>0){
-			group["cursor"]-=1
+		if(group[?"cursor"]>0){
+			group[?"cursor"]-=1
 		} 
 	}
 	if(keyboard_check_pressed(vk_down)){
-		if(group["cursor"] < array_length_1d(ButtonGroup) -1  ){
-			group["cursor"]+=1
+		if(group[?"cursor"] < array_length_1d(ButtonGroup) -1  ){
+			group[?"cursor"]+=1
 		} 
 	}
 
@@ -39,14 +39,14 @@ for( var i = 0 ; i < array_length_1d(ButtonGroup) ; i++ ){
 	var Button = ButtonGroup[i]
 	//mouse
 	if( MX >= Button[?"x1"] && MX <=Button[?"x2"] && MY >= Button[?"y1"] && MY <= Button[?"y2"]){
-		group["cursor"] = i
+		group[?"cursor"] = i
 	}
 	ButtonGroup[i] = Button
 }
 for( var i = 0 ; i < array_length_1d(ButtonGroup) ; i++ ){
 	var Button = ButtonGroup[i]
 	
-	if(i != group["cursor"]) Button[?"cursor"] = 0
+	if(i != group[?"cursor"]) Button[?"cursor"] = 0
 	else Button[?"cursor"] = 1
 	
 	ButtonGroup[i] = Button
