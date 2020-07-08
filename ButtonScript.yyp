@@ -178,7 +178,7 @@
             "Key": "c6c3b3f9-d36e-48fb-abb5-17bdc7304552",
             "Value": {
                 "id": "25df9265-445a-45f9-bc37-03046a35da27",
-                "resourcePath": "objects\\object0\\object0.yy",
+                "resourcePath": "objects\\PutButton\\PutButton.yy",
                 "resourceType": "GMObject"
             }
         },

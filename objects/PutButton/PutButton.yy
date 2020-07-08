@@ -2,7 +2,7 @@
     "id": "c6c3b3f9-d36e-48fb-abb5-17bdc7304552",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object0",
+    "name": "PutButton",
     "eventList": [
         {
             "id": "63a1f61f-2aa2-44ad-9169-2133b44514c6",
