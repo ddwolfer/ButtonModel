@@ -3,34 +3,50 @@
 ///@arg mouse_on_button_Color
 
 var windowSize =  window_get_width()/room_width
-ButtonGroup = argument0
+var group = argument0
+ButtonGroup = group[?"button"]
 var MX = mouse_x
 var MY = mouse_y
 
 //keyboard
-if(keyboard_check_pressed(vk_left)){
-	if(cursorNow>0){
-		cursorNow-=1
-	} 
+if( group[?"direction"] == 0 ){
+	if(keyboard_check_pressed(vk_left)){
+		if(group["cursor"]>0){
+			group["cursor"]-=1
+		} 
+	}
+	if(keyboard_check_pressed(vk_right)){
+		if(group["cursor"] < array_length_1d(ButtonGroup) -1  ){
+			group["cursor"]+=1
+		} 
+	}
+}else{
+	if(keyboard_check_pressed(vk_up)){
+		if(group["cursor"]>0){
+			group["cursor"]-=1
+		} 
+	}
+	if(keyboard_check_pressed(vk_down)){
+		if(group["cursor"] < array_length_1d(ButtonGroup) -1  ){
+			group["cursor"]+=1
+		} 
+	}
+
 }
-if(keyboard_check_pressed(vk_right)){
-	if(cursorNow < array_length_1d(ButtonGroup) -1  ){
-		cursorNow+=1
-	} 
-}
+
 //mouse
 for( var i = 0 ; i < array_length_1d(ButtonGroup) ; i++ ){
 	var Button = ButtonGroup[i]
 	//mouse
 	if( MX >= Button[?"x1"] && MX <=Button[?"x2"] && MY >= Button[?"y1"] && MY <= Button[?"y2"]){
-		cursorNow = i
+		group["cursor"] = i
 	}
 	ButtonGroup[i] = Button
 }
 for( var i = 0 ; i < array_length_1d(ButtonGroup) ; i++ ){
 	var Button = ButtonGroup[i]
 	
-	if(i != cursorNow) Button[?"cursor"] = 0
+	if(i != group["cursor"]) Button[?"cursor"] = 0
 	else Button[?"cursor"] = 1
 	
 	ButtonGroup[i] = Button
